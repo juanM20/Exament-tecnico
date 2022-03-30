@@ -1,6 +1,9 @@
 
+const routes_advice = {
 
-const rand_advice = "https://api.adviceslip.com/advice"
+    rand_advice: "https://api.adviceslip.com/advice",
+    id_advice: "https://api.adviceslip.com/advice/{slip_id}"
+}
 
 
-export default rand_advice
+export default routes_advice

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import axios from 'axios'
-import rand_advice from '../../routes'
+import routes_advice from '../../routes'
 
 
 function AdviceRand() {
@@ -10,7 +10,7 @@ function AdviceRand() {
     const get_advice = async () => {
 
         try{
-            const response = await axios.get(rand_advice);
+            const response = await axios.get(routes_advice.rand_advice);
             console.log(response)
             setAdvice(response.data.slip.advice)
         }
@@ -22,13 +22,17 @@ function AdviceRand() {
 
 
     return(
-        <div className="advice_rand">
+        <div>
+            <div className="advice_rand">
+                <button className="btn-advice" onClick={get_advice}>Push me</button>
+                <h4>{advice}</h4>
+            </div>
 
-            <button className="btn-advice" onClick={get_advice}>Push me</button>
-
-            <h4>{advice}</h4>
-
-        </div>
+            <div className="advice_id">
+                <h2>Set an ID in the input text</h2>
+                <input type="text" placeholder='write an ID' />
+            </div>
+        </div> 
     )
 
 }
