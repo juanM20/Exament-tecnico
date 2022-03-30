@@ -3,7 +3,7 @@ import axios from 'axios'
 import rand_advice from '../../routes'
 
 
-function Advice_rand() {
+function AdviceRand() {
 
     const [advice, setAdvice] = useState('')
 
@@ -33,6 +33,6 @@ function Advice_rand() {
 
 }
 
-export default Advice_rand
+export default AdviceRand
 
 

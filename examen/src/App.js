@@ -1,4 +1,4 @@
-import Advice_rand from './components/advice_rand/Advice_rand'
+import AdviceRand from './components/advice_rand/AdviceRand'
 import './App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
 
 
         <h1>Get and advice</h1>
-        <Advice_rand></Advice_rand> 
+        <AdviceRand></AdviceRand> 
       </div>
       
 
