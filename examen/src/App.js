@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import Advice_rand from './components/advice_rand/Advice_rand'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <div className="Advice">
+
+
+        <h1>Get and advice</h1>
+        <Advice_rand></Advice_rand> 
+      </div>
+      
+
     </div>
   );
 }
